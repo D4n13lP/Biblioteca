@@ -1,4 +1,4 @@
-package Daniel;
+//package Daniel;
 
 import javax.swing.*;
 import java.text.ParseException;
@@ -81,13 +81,9 @@ public class PruebaBiblioteca {
 
             switch (opcion){
                 case 1: String titulo = JOptionPane.showInputDialog("Ingresa el titulo de libro");
-                    boolean availability=library.libroDisponible(titulo);
-                    try {
+                        boolean availability=library.libroDisponible(titulo);
                         String a= (availability)? "¡Libro disponible!" : "Lo siento, no esta disponible actualmente";
-                    }catch(NullPointerException e){
-                        JOptionPane.showMessageDialog(null, "Lo siento, no esta disponible actualmente");
-                    }
-
+                        JOptionPane.showMessageDialog(null, a);
                     break;
                 case 2:
                     break;

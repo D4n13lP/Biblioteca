@@ -1,0 +1,1 @@
+Se agrego otro constructor a la clase Libro de este modo se implemento sobrecarga de metodos y en la clase Biblioteca el objeto libro ya no se inicia apuntando a null lo que ocasionaba que el programa se rompiera al mandar un parametro que no se encontraba en la lista de libros. Ahora el objeto se crea con el constructor que solo pide un parametro.

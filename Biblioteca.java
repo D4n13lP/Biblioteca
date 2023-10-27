@@ -1,4 +1,4 @@
-package Daniel;
+//package Daniel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,9 @@ public class Biblioteca {
     private String ciudad;
     private List<Libro> libros;
 
-    /*public Biblioteca() {
+    public Biblioteca() {
         libros = new ArrayList<Libro>();
-    }*/
+    }
 //**************  Getters y Setter  *************************************************************************************************
     public String getNombre() {
         return nombre;
@@ -38,7 +38,7 @@ public class Biblioteca {
 
     // ************ METODOS *******************************************************************************************
     public Boolean libroDisponible(String titulo){
-        Libro libro=null;
+        Libro libro=new Libro(false);
 
         if(libros!=null){
             for(Libro l:libros) {

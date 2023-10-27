@@ -1,4 +1,4 @@
-package Daniel;
+//package Daniel;
 import java.util.Date;
 import java.util.List;
 
@@ -12,9 +12,9 @@ public class Libro {
     private List<Autor> autores;
     private Boolean disponible;
 
-    /*public Libro(){
-
-    }*/
+    public Libro(boolean disponible){
+        this.disponible=false;
+    }
 
     public Libro(String titulo, String editorial, String isbn, Date fechaAd, Integer pubYear, String paisPub, List<Autor> autores, Boolean disponible) {
         this.titulo = titulo;
