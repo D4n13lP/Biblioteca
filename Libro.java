@@ -16,7 +16,7 @@ public class Libro {
         this.disponible=false;
     }
 
-    public Libro(String titulo, String editorial, String isbn, Date fechaAd, Integer pubYear, String paisPub, List<Autor> autores, Boolean disponible) {
+    public Libro(String titulo, String editorial, String isbn, Date fechaAd, Integer pubYear, String paisPub, List<Autor> autores, Boolean availability) {
         this.titulo = titulo;
         this.editorial = editorial;
         this.isbn = isbn;
@@ -24,7 +24,7 @@ public class Libro {
         this.pubYear = pubYear;
         this.paisPub = paisPub;
         this.autores = autores;
-        this.disponible = true;
+        this.disponible = availability;
     }
 
     public String getTitulo() {
